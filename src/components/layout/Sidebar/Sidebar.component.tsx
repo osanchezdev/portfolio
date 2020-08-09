@@ -24,11 +24,7 @@ import {
   NavbarItem,
 } from "./Sidebar.styles"
 
-type SidebarProps = {
-  switchTheme
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ switchTheme }) => {
+const Sidebar: React.FC = () => {
   return (
     <SidebarWrapper>
       <StyledSidebar>
@@ -75,7 +71,7 @@ const Sidebar: React.FC<SidebarProps> = ({ switchTheme }) => {
             </NavbarItem>
           </NavbarList>
         </Navbar>
-        <ThemeSwitch switchTheme={switchTheme} />
+        <ThemeSwitch />
         <div>
           <button>Button</button>
         </div>

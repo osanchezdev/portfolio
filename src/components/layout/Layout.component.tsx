@@ -9,19 +9,17 @@ import "typeface-roboto"
 
 type LayoutProps = {
   children
-  switchTheme
 }
-const Layout: React.FC<LayoutProps> = ({ children, switchTheme }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <LayoutWrapper>
-      <Sidebar switchTheme={switchTheme} />
+      <Sidebar />
       <MainWrapper>{children}</MainWrapper>
     </LayoutWrapper>
   )
 }
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  switchTheme: PropTypes.func.isRequired,
 }
 
 export default Layout
