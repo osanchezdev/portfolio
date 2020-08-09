@@ -354,6 +354,11 @@ export const Normalize = createGlobalStyle`
 `
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({ theme }) => theme.primary};
+    font-family: 'Roboto', sans-serif;
+    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.neutral_primary};
+  }
+  link {
+    color: ${({ theme }) => theme.link};
   }
 `
