@@ -10,6 +10,12 @@ import {
   FaEnvelopeOpenText,
 } from "react-icons/fa"
 import ThemeSwitch from "./ThemeSwitch/ThemeSwitch.component"
+import Button from "../../global/Button/Button.component"
+import {
+  BTN_PRIMARY,
+  //  BTN_SECONDARY,
+  //   BTN_TERTIARY
+} from "../../../constants"
 import {
   SidebarWrapper,
   Sidebar as StyledSidebar,
@@ -73,7 +79,9 @@ const Sidebar: React.FC = () => {
         </Navbar>
         <ThemeSwitch />
         <div>
-          <button>Button</button>
+          <Button variant={BTN_PRIMARY}>Primary</Button>
+          {/* <Button variant={BTN_SECONDARY}>Secondary</Button>
+          <Button variant={BTN_TERTIARY}>Tertiary</Button> */}
         </div>
       </StyledSidebar>
     </SidebarWrapper>

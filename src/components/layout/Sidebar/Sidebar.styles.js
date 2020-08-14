@@ -3,9 +3,11 @@ import { darken } from "polished"
 
 export const SidebarWrapper = styled.aside`
   position: relative;
+  height: 100vh;
   background: ${({ theme }) => theme.neutral_secondary};
   text-align: center;
   /* box-shadow: 1px 0px 10px -4px rgba(0, 0, 0, 0.75); */
+  color: ${({ theme }) => theme.sidebar_text};
 `
 export const Sidebar = styled.div`
   position: fixed;
@@ -31,12 +33,12 @@ export const SidebarDescription = styled.p`
 export const SidebarProfileLinks = styled.div`
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid ${({ theme }) => theme.text};
+  border-bottom: 1px solid ${({ theme }) => theme.sidebar_text};
   padding: 10px;
 `
 export const ProfileItem = styled.span`
   & a > svg {
-    fill: ${({ theme }) => theme.text} !important;
+    fill: ${({ theme }) => theme.sidebar_text} !important;
     height: 25px;
     width: 25px;
   }
@@ -55,10 +57,9 @@ export const NavbarItem = styled.li`
   align-items: center;
   font-size: 16px;
   line-height: 40px;
-  transition: color 200ms ease;
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => darken(0.8, theme.text)};
+    color: ${({ theme }) => darken(0.8, theme.sidebar_text)};
   }
   & span {
     font-size: 18px;

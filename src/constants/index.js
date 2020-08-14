@@ -1,0 +1,3 @@
+export const BTN_PRIMARY = "BTN_PRIMARY"
+export const BTN_SECONDARY = "BTN_SECONDARY"
+export const BTN_TERTIARY = "BTN_TERTIARY"
